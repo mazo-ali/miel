@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="logo.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="logo.png" alt="" class="logo">منحلة البركة<span>.</span></a>
+			
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item ">
+							<a class="nav-link" href="index.html">Accueil</a>
+						</li>
+						<li><a class="nav-link" href="shop.html">Boutique</a></li>
+						<li class="active"><a class="nav-link" href="about.html">À propos de nous</a></li>
+						<li><a class="nav-link" href="services.html">Services</a></li>
+			
+						<li><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+					</ul>
+			
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						
+						<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<form class="untree_co-section" action="thankyou.html">
+		    <div class="container">
+		      <div class="row">
+		        <div class="col-md-6 mb-5 mb-md-0">
+		          <h2 class="h3 mb-3 text-black">Remplir cette formulaire pour passer la commande </h2>
+		          <div class="p-3 p-lg-5 border bg-white">
+		            <div class="form-group row">
+		              <div class="col-md-6">
+		                <label for="c_fname" class="text-black">Nom <span class="text-danger">*</span></label>
+		                <input type="text" class="form-control" id="c_fname" name="c_fname" required>
+		              </div>
+		              <div class="col-md-6">
+		                <label for="c_lname" class="text-black">Prenom<span class="text-danger">*</span></label>
+		                <input type="text" class="form-control" id="c_lname" name="c_lname" required>
+		              </div>
+		            </div>
+
+		            <div class="form-group row">
+		              <div class="col-md-12">
+		                <label for="c_address" class="text-black">Adresse détaillée<span class="text-danger">*</span></label>
+		                <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street address" required>
+		              </div>
+		            </div>
+
+		            <div class="form-group mt-3">
+		              <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+		            </div>
+
+		            <div class="form-group row mb-5">
+		              <div class="col-md-6">
+		                <label for="c_email_address" class="text-black">Email Adresse <span class="text-danger">*</span></label>
+		                <input type="email" class="form-control" id="c_email_address" name="c_email_address" required>
+		              </div>
+		              <div class="col-md-6">
+		                <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+		                <input type="number" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number" required>
+		              </div>
+		            </div>
+		           
+		            <div class="form-group">
+		              <label for="c_order_notes" class="text-black">order note</label>
+		              <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Note"></textarea>
+		            </div>
+
+		          </div>
+		        </div>
+		        <div class="col-md-6">
+
+		          <div class="row mb-5">
+		            <div class="col-md-12">
+		              <h2 class="h3 mb-3 text-black">votre panier</h2>
+		              <div class="p-3 p-lg-5 border bg-white">
+		                <table class="table site-block-order-table mb-5">
+							<thead>
+							  <tr>
+								<th>Produit</th>
+								<th>Quantité</th>
+								<th>Prix Unitaire</th>
+								<th>Prix Total</th>
+							  </tr>
+							</thead>
+							<tbody id="cart-items">
+							  <!-- Les produits seront insérés ici -->
+							</tbody>
+						  </table>
+						  
+
+		                <div class="form-group">
+							<input class="btn btn-black btn-lg py-3 btn-block" type="submit" value="Place Order"/>
+		                </div>
+
+		              </div>
+		            </div>
+		          </div>
+
+		        </div>
+		      </div>
+		      <!-- </form> -->
+		    </div>
+		</form>
+
+		<!-- Start Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+      <h3>Abonnez-vous à notre newsletter</h3>
+      <form class="newsletter-form">
+        <div class="form-group">
+          <input type="text" class="form-input" placeholder="Votre nom">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-input" placeholder="Votre email">
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fa fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">منحلة البركة<span>.</span></a>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="link-column">
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <ul>
+            <li><a href="#">Aide</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Chat en direct</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <ul>
+            <li><a href="#">Nos ruchers</a></li>
+            <li><a href="#">Notre équipe</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="link-column">
+          <ul>
+            <li><a href="#">Miel de Thym</a></li>
+            <li><a href="#">Miel d'Eucalyptus</a></li>
+            <li><a href="#">Gelée Royale</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; 2025 منحلة البركة. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+		
+		<!-- End Footer Section -->	
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+		<script>
+			// Ajoutez ce script à votre page checkout.html
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtenez le bouton "Place Order"
+  const placeOrderButton = document.querySelector('.btn-black.btn-lg.py-3.btn-block');
+  
+  if (placeOrderButton) {
+    placeOrderButton.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêcher la navigation par défaut
+
+        // Récupérer les informations du formulaire
+        const nom = document.getElementById('c_fname');
+        const prenom = document.getElementById('c_lname');
+        const adresse = document.getElementById('c_address');
+        const email = document.getElementById('c_email_address');
+        const telephone = document.getElementById('c_phone');
+        const notes = document.getElementById('c_order_notes');
+
+        // Récupérer les produits et le total du panier
+        const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+        let total = 0;
+        cartItems.forEach(item => {
+            total += item.price * item.quantity;
+        });
+
+        // Liste des champs obligatoires
+        const champs = [nom, prenom, adresse, email, telephone];
+        let estValide = true;
+
+        // Réinitialiser les erreurs
+        champs.forEach(champ => champ.classList.remove("is-invalid"));
+
+        // Vérifier si un champ est vide ou ne contient que des espaces
+        champs.forEach(champ => {
+            if (!champ.value.trim()) {
+                champ.classList.add("is-invalid");
+                estValide = false;
+            }
+        });
+
+        if (!estValide) {
+            alert('Veuillez remplir correctement tous les champs obligatoires.');
+            return;
+        }
+
+        // Préparer les données à envoyer
+        const data = {
+            nom: nom.value.trim(),
+            prenom: prenom.value.trim(),
+            adresse: adresse.value.trim(),
+            email: email.value.trim(),
+            telephone: telephone.value.trim(),
+            produits: cartItems,
+            total: total.toFixed(2) + ' DT',
+            notes: notes.value.trim()
+        };
+
+        // URL du script Web App Google Apps Script (à remplacer par votre URL)
+        const scriptURL = 'VOTRE_URL_GOOGLE_APPS_SCRIPT_ICI';
+
+        // Afficher un indicateur de chargement
+        placeOrderButton.textContent = 'Traitement en cours...';
+        placeOrderButton.disabled = true;
+
+        // Envoyer les données au script Google Apps Script
+        fetch(scriptURL, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'success') {
+                resetCartAfterSuccess();
+            } else {
+                alert('Une erreur est survenue. Veuillez réessayer.');
+                placeOrderButton.textContent = 'Place Order';
+                placeOrderButton.disabled = false;
+            }
+        })
+        .catch(error => {
+            console.error('Erreur:', error);
+            alert('Une erreur est survenue. Veuillez réessayer.');
+            placeOrderButton.textContent = 'Place Order';
+            placeOrderButton.disabled = false;
+        });
+    });
+}
+
+/**
+ * Réinitialise le panier et redirige vers la page de confirmation après succès.
+ */
+function resetCartAfterSuccess() {
+    localStorage.removeItem('cartItems'); // Supprime le panier du localStorage
+    setTimeout(() => {
+        window.location.href = 'thankyou.html'; // Redirection après succès
+    }, 1500); // Délai pour une meilleure UX
+}
+
+});
+
+// Fonction pour récupérer les articles du panier depuis localStorage
+function getCartItems() {
+  const cartItems = localStorage.getItem('cartItems');
+  return cartItems ? JSON.parse(cartItems) : [];
+}
+
+// Fonction pour afficher les articles du panier
+function displayCartItems() {
+  const cartItemsContainer = document.getElementById('cart-items');
+  const cartItems = getCartItems();
+  
+  // Vider le conteneur
+  cartItemsContainer.innerHTML = '';
+  
+  // Variable pour calculer le total
+  let total = 0;
+  
+  if (cartItems.length === 0) {
+    cartItemsContainer.innerHTML = `
+      <tr>
+        <td colspan="4" class="text-center">Votre panier est vide</td>
+      </tr>
+    `;
+  } else {
+    cartItems.forEach((item, index) => {
+      const itemTotal = item.price * item.quantity;
+      total += itemTotal;
+      
+      const itemRow = document.createElement('tr');
+      itemRow.innerHTML = `
+        <td>${item.name}</td>
+        <td>
+          
+          <span class="mx-2">${item.quantity}</span>
+     
+        </td>
+        <td>${item.price.toFixed(2)} DT</td>
+        <td>${itemTotal.toFixed(2)} DT</td>
+      `;
+      cartItemsContainer.appendChild(itemRow);
+    });
+
+    // Ajouter la ligne du total
+    const totalRow = document.createElement('tr');
+    totalRow.innerHTML = `
+      <td colspan="3" class="text-black font-weight-bold">Total</td>
+      <td class="text-black font-weight-bold">${total.toFixed(2)} DT</td>
+    `;
+    cartItemsContainer.appendChild(totalRow);
+  }
+
+  // Ajouter les écouteurs d'événements pour les boutons
+  addEventListeners();
+}
+
+// Fonction pour mettre à jour un article du panier
+function updateCartItem(index, quantity) {
+  const cartItems = getCartItems();
+  
+  if (quantity <= 0) {
+    cartItems.splice(index, 1);
+  } else {
+    cartItems[index].quantity = quantity;
+  }
+
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  displayCartItems();
+}
+
+
+
+
+// Afficher les articles du panier au chargement de la page
+document.addEventListener('DOMContentLoaded', displayCartItems);
+
+
+		</script>
+	</body>
+
+</html>

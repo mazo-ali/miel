@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="logo.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>منحلة البركة - Votre Panier</title>
+</head>
+
+<body>
+
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" class="logo">منحلة البركة<span>.</span></a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Boutique</a></li>
+
+          <li><a class="nav-link" href="about.html">À propos de nous</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+        </ul>
+    
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link active" href="cart.html"><img src="images/cart.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header/Navigation -->
+
+  <div class="untree_co-section before-footer-section">
+    <div class="container">
+      <div class="row mb-5">
+        <form class="col-md-12" method="post">
+          <div class="site-blocks-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="product-thumbnail">Image</th>
+                  <th class="product-name">Produit</th>
+                  <th class="product-price">Prix</th>
+                  <th class="product-quantity">Quantité</th>
+                  <th class="product-total">Total</th>
+                  <th class="product-remove">Supprimer</th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <!-- Les articles du panier seront générés ici dynamiquement -->
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <button class="btn btn-outline-black btn-sm btn-block" onclick="window.location='shop.html'">Continuer vos achats</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-5">
+          <div class="row justify-content-end">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 text-right border-bottom mb-5">
+                  <h3 class="text-black h4 text-uppercase">Total du panier</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <span class="text-black">Sous-total</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black" id="cart-subtotal">0.00 DT</strong>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <span class="text-black">Total</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black" id="cart-total">0.00 DT</strong>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Procéder au paiement</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter Section -->
+      <div class="newsletter-section">
+        <h3>Abonnez-vous à notre newsletter</h3>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Votre nom">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" placeholder="Votre email">
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+  
+      <!-- Main Footer Content -->
+      <div class="footer-content">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">منحلة البركة<span>.</span></a>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+  
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <div class="link-column">
+            <ul>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <ul>
+              <li><a href="#">Aide</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Chat en direct</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <ul>
+              <li><a href="#">Nos ruchers</a></li>
+              <li><a href="#">Notre équipe</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <ul>
+              <li><a href="#">Miel de Thym</a></li>
+              <li><a href="#">Miel d'Eucalyptus</a></li>
+              <li><a href="#">Gelée Royale</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>&copy; 2025 منحلة البركة. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/custom.js"></script>
+  
+  <!-- Script pour gérer le panier -->
+  <script>
+    // Fonction pour récupérer les articles du panier depuis localStorage
+    function getCartItems() {
+      const cartItems = localStorage.getItem('cartItems');
+      return cartItems ? JSON.parse(cartItems) : [];
+    }
+    
+    // Fonction pour afficher les articles du panier
+    function displayCartItems() {
+      const cartItemsContainer = document.getElementById('cart-items');
+      const cartItems = getCartItems();
+      
+      // Vider le conteneur
+      cartItemsContainer.innerHTML = '';
+      
+      // Variable pour calculer le total
+      let total = 0;
+      
+      if (cartItems.length === 0) {
+        // Afficher un message si le panier est vide
+        cartItemsContainer.innerHTML = `
+          <tr>
+            <td colspan="6" class="text-center">Votre panier est vide</td>
+          </tr>
+        `;
+      } else {
+        // Parcourir chaque article et l'ajouter au tableau
+        cartItems.forEach((item, index) => {
+          const itemTotal = item.price * item.quantity;
+          total += itemTotal;
+          
+          const itemRow = document.createElement('tr');
+          itemRow.innerHTML = `
+            <td class="product-thumbnail">
+              <img src="${item.image}" alt="${item.name}" class="img-fluid">
+            </td>
+            <td class="product-name">
+              <h2 class="h5 text-black">${item.name}</h2>
+            </td>
+            <td>${item.price.toFixed(2)} DT</td>
+            <td>
+              <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-black decrease" type="button" data-index="${index}">&minus;</button>
+                </div>
+                <input type="text" class="form-control text-center quantity-amount" value="${item.quantity}" placeholder="" aria-label="Quantité" aria-describedby="button-addon1" data-index="${index}">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-black increase" type="button" data-index="${index}">&plus;</button>
+                </div>
+              </div>
+            </td>
+            <td>${itemTotal.toFixed(2)} DT</td>
+            <td><a href="#" class="btn btn-black btn-sm remove-item" data-index="${index}">X</a></td>
+          `;
+          
+          cartItemsContainer.appendChild(itemRow);
+        });
+      }
+      
+      // Mettre à jour les totaux
+      document.getElementById('cart-subtotal').textContent = `${total.toFixed(2)} DT`;
+      document.getElementById('cart-total').textContent = `${total.toFixed(2)} DT`;
+      
+      // Ajouter les écouteurs d'événements pour les boutons
+      addEventListeners();
+    }
+    
+    // Fonction pour mettre à jour un article du panier
+    function updateCartItem(index, quantity) {
+      const cartItems = getCartItems();
+      
+      if (quantity <= 0) {
+        // Supprimer l'article si la quantité est 0 ou négative
+        cartItems.splice(index, 1);
+      } else {
+        // Mettre à jour la quantité
+        cartItems[index].quantity = quantity;
+      }
+      
+      // Enregistrer le panier mis à jour
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      
+      // Mettre à jour l'affichage
+      displayCartItems();
+    }
+    
+    // Fonction pour supprimer un article du panier
+    function removeCartItem(index) {
+      const cartItems = getCartItems();
+      cartItems.splice(index, 1);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      displayCartItems();
+    }
+    
+    // Fonction pour ajouter les écouteurs d'événements
+    function addEventListeners() {
+      // Boutons d'augmentation de la quantité
+      document.querySelectorAll('.increase').forEach(button => {
+        button.addEventListener('click', () => {
+          const index = parseInt(button.getAttribute('data-index'));
+          const cartItems = getCartItems();
+          const newQuantity = cartItems[index].quantity + 1;
+          updateCartItem(index, newQuantity);
+        });
+      });
+      
+      // Boutons de diminution de la quantité
+      document.querySelectorAll('.decrease').forEach(button => {
+        button.addEventListener('click', () => {
+          const index = parseInt(button.getAttribute('data-index'));
+          const cartItems = getCartItems();
+          const newQuantity = cartItems[index].quantity - 1;
+          updateCartItem(index, newQuantity);
+        });
+      });
+      
+      // Champs de quantité
+      document.querySelectorAll('.quantity-amount').forEach(input => {
+        input.addEventListener('change', () => {
+          const index = parseInt(input.getAttribute('data-index'));
+          const newQuantity = parseInt(input.value);
+          if (!isNaN(newQuantity)) {
+            updateCartItem(index, newQuantity);
+          }
+        });
+      });
+      
+      // Boutons de suppression
+      document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', e => {
+          e.preventDefault();
+          const index = parseInt(button.getAttribute('data-index'));
+          removeCartItem(index);
+        });
+      });
+      
+      // Bouton de mise à jour du panier
+      const updateCartButton = document.getElementById('update-cart');
+      if (updateCartButton) {
+        updateCartButton.addEventListener('click', e => {
+          e.preventDefault();
+          displayCartItems();
+        });
+      }
+    }
+    
+    // Afficher les articles du panier au chargement de la page
+    document.addEventListener('DOMContentLoaded', displayCartItems);
+  </script>
+</body>
+</html>

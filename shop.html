@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="logo.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+  <style>
+    .hero {
+      height: 15vh;
+      position: relative;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.5); /* Assombrir légèrement */
+    }
+    
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Assurer un ajustement parfait */
+      z-index: -1;
+    }
+    
+    .hero .container {
+      position: relative;
+      z-index: 1; /* Garde le texte au-dessus de la vidéo */
+    }
+    
+    @media (max-width: 768px) { 
+      .img-fluid {
+        width: 300px;
+        margin: 20px;
+      }
+    }
+    h1{
+      margin-left: 50px;
+      margin-top: 20px;
+      color: rgb(186, 112, 1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .counter-wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+	  margin-left: 40px;
+    }
+    
+    .counter-label {
+      margin-right: 8px;
+    }
+    
+    .counter {
+      display: inline-block;
+      width: 30px;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+    
+    .counter-button {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #f9bf29;
+      color: #333;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
+    
+    .counter-button:hover {
+      background-color: #e5aa14;
+    }
+    
+    .counter-button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" class="logo">منحلة البركة<span>.</span></a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Boutique</a></li>
+          <li class="active"><a class="nav-link" href="about.html">À propos de nous</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+        
+          <li><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+        </ul>
+    
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header/Navigation -->
+
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/miel.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    <div class="container">
+      <div class="row justify-content-between" >
+        <h1 style="position: center;color: rgb(255, 185, 21);">Nos Prouduits</h1>
+      </div>
+    </div>
+  </div>
+  
+  <h1>Miel 500g</h1>
+  <div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Produit 1 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/zater0.5.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Zater</h3>
+            <strong class="product-price">40.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 2 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/jebli0.5.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Jabli</h3>
+            <strong class="product-price">40.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 3 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/kalatouss0.5 (2).jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Kalatous</h3>
+            <strong class="product-price">40.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 4 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/jebh0.5_20250228_04424862.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Jebh</h3>
+            <strong class="product-price">40.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 5 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/sedr0.5 (2).jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Sedr</h3>
+            <strong class="product-price">40.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <!-- Miel 1Kg Section -->
+  <h1>Miel 1Kg</h1>
+  <div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Produit 6 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/zater1kg.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Zater</h3>
+            <strong class="product-price">80.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 7 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/jebli1kg (2)_20250228_05134865.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Jabli</h3>
+            <strong class="product-price">80.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 8 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/kltouss1kg_20250228_04819117.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Kalatous</h3>
+            <strong class="product-price">80.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 9 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/jebh0.5_20250228_04424862.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Jebh</h3>
+            <strong class="product-price">80.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Produit 10 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="product-item">
+            <img src="images/miel/sedr1kg_20250228_03847663.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Miel Sedr</h3>
+            <strong class="product-price">80.00 DT</strong>
+            <div class="counter-wrapper">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <!-- Nos Pack Section -->
+  <h1>Nos Pack</h1>
+  <div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Pack 1 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/pack1.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">0.5 كغ عسل: الزعتر، الكالتوس، جبلي، سدر، عسل بالفواكه الجافة <br> 100غ حبوب اللقاح، صابون، ملعقة</h3>
+            <strong class="product-price">90.00 د.ت</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pack 2 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/pack2_20250227_172440703.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">0.5 كغ عسل: الزعتر، الكالتوس، جبلي، سدر، عسل بالفواكه الجافة <br> 100غ حبوب اللقاح، صابون، ملعقة</h3>
+            <strong class="product-price">130.00 د.ت</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <!-- Autres Section -->
+  <h1>Autres</h1>
+  <div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Autre 1 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/bssissa.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Bssissa 1 kg</h3>
+            <strong class="product-price">30.00 dt</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autre 2 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/bssissa.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Bssissa 500 g</h3>
+            <strong class="product-price">15.00 dt</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autre 3 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/mgharfa.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Cuillère à miel</h3>
+            <strong class="product-price">5.00 dt</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autre 4 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/sabona.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">savon</h3>
+            <strong class="product-price">10.00 dt</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autre 5 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/akber.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">Akber 50g</h3>
+            <strong class="product-price">50.00 dt</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autre 6 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/hboblikah.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">grains de licorne|حبوب اللقاح</h3>
+            <strong class="product-price">20.00dt (100g)</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autre 7 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5" style="direction: rtl; text-align: right;">
+          <div class="product-item">
+            <img src="images/miel/malektannahl.jpg" class="img-fluid product-thumbnail">
+            <h3 class="product-title">gelée royale|غذاء ملكة النحل</h3>
+            <strong class="product-price" style="direction: rtl; text-align: left;">25.00 dt (10g)</strong>
+            <div class="counter-wrapper" style="direction: ltr;">
+              <span class="counter-label">Quantité: </span>
+              <button class="counter-button" onclick="decrementCounter(this)">-</button>
+              <span class="counter">0</span>
+              <button class="counter-button" onclick="incrementCounter(this)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <!-- Start Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter Section -->
+      <div class="newsletter-section">
+        <h3>Abonnez-vous à notre newsletter</h3>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Votre nom">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" placeholder="Votre email">
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+  
+      <!-- Main Footer Content -->
+      <div class="footer-content">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">منحلة البركة<span>.</span></a>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+  
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <div class="link-column">
+            <ul>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <ul>
+              <li><a href="#">Aide</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Chat en direct</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <ul>
+              <li><a href="#">Nos ruchers</a></li>
+              <li><a href="#">Notre équipe</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <ul>
+              <li><a href="#">Miel de Thym</a></li>
+              <li><a href="#">Miel d'Eucalyptus</a></li>
+              <li><a href="#">Gelée Royale</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>&copy; 2025 منحلة البركة. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->	
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/custom.js"></script>
+  
+  <!-- Counter JavaScript -->
+  <script>
+    function decrementCounter(button) {
+      const counterElement = button.nextElementSibling;
+      let value = parseInt(counterElement.textContent);
+      if (value > 0) {
+        counterElement.textContent = value - 1;
+      }
+    }
+    
+    function incrementCounter(button) {
+      const counterElement = button.previousElementSibling;
+      let value = parseInt(counterElement.textContent);
+      counterElement.textContent = value + 1;
+    }
+	// Fonction pour ajouter un produit au panier
+function addToCart(productName, price, imageUrl, quantity) {
+  // Récupérer le panier actuel
+  const cartItems = localStorage.getItem('cartItems');
+  const cart = cartItems ? JSON.parse(cartItems) : [];
+  
+  // Vérifier si le produit existe déjà dans le panier
+  const existingProductIndex = cart.findIndex(item => item.name === productName);
+  
+  if (existingProductIndex !== -1) {
+    // Si le produit existe, mettre à jour sa quantité
+    cart[existingProductIndex].quantity += quantity;
+  } else {
+    // Sinon, ajouter le nouveau produit au panier
+    cart.push({
+      name: productName,
+      price: price,
+      image: imageUrl,
+      quantity: quantity
+    });
+  }
+  
+  // Enregistrer le panier mis à jour dans localStorage
+  localStorage.setItem('cartItems', JSON.stringify(cart));
+  
+  // Notification visuelle pour l'utilisateur
+  alert(`${quantity} ${productName} ajouté(s) au panier`);
+}
+
+// Fonction appelée quand un utilisateur change la quantité et clique sur "Ajouter au panier"
+function updateCounter(button) {
+  const counterElement = button.parentElement.querySelector('.counter');
+  const productItem = button.closest('.product-item');
+  const productName = productItem.querySelector('.product-title').textContent;
+  const priceText = productItem.querySelector('.product-price').textContent;
+  const price = parseFloat(priceText.replace('DT', '').replace('د.ت', '').trim());
+  const imageUrl = productItem.querySelector('img').src;
+  const quantity = parseInt(counterElement.textContent);
+  
+  if (quantity > 0) {
+    addToCart(productName, price, imageUrl, quantity);
+    // Réinitialiser le compteur après l'ajout
+    counterElement.textContent = '0';
+  } else {
+    alert('Veuillez sélectionner une quantité supérieure à 0');
+  }
+}
+
+// Ajouter un écouteur d'événement pour les boutons d'achat
+document.addEventListener('DOMContentLoaded', function() {
+  // Ajouter des boutons "Ajouter au panier" à chaque produit
+  const productItems = document.querySelectorAll('.product-item');
+  
+  productItems.forEach(item => {
+    const counterWrapper = item.querySelector('.counter-wrapper');
+    if (counterWrapper) {
+      const addButton = document.createElement('button');
+      addButton.className = 'btn btn-black btn-sm btn-block mt-2';
+      addButton.textContent = 'Ajouter au panier';
+      addButton.onclick = function() { updateCounter(this); };
+      
+      // Insérer le bouton après le counter-wrapper
+      counterWrapper.parentNode.insertBefore(addButton, counterWrapper.nextSibling);
+    }
+  });
+});
+  </script>
+</body>
+</html>
