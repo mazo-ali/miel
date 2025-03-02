@@ -270,8 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // URL du script Web App Google Apps Script (à remplacer par votre URL)
-        const scriptURL = 'http://localhost:5000';
-
         // Afficher un indicateur de chargement
         placeOrderButton.textContent = 'Traitement en cours...';
         placeOrderButton.disabled = true;
@@ -292,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         // Envoyer les données au script Google Apps Script
-		fetch('https://jbara.xyz/send-email', {
+		fetch('https://resend.jbara.xyz/send-email', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
