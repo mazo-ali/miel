@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <p><strong>Phone:</strong> ${data.telephone}</p>
   <h3>Products:</h3>
   <ul>
-    ${data.produits.map(item => `<li>${item.name}, ${item.price}, quantite: ${item.quantity}</li>`).join('')}
+    ${data.produits.map(item => <li>${item.name}, ${item.price}, quantite: ${item.quantity}</li>).join('')}
   </ul>
   <p><strong>Total:</strong> ${data.total}</p>
   <p><strong>Notes:</strong> ${data.notes}</p>
@@ -304,12 +304,11 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 })
   .then(response => {
-	if (response.json().id) {
+	if (response.json().id || response.status === 200) {
 		localStorage.setItem('cartItems', []);
 		window.location = "thankyou.html"
 	} else {
-		alert("Erreur")
-		console.log(response)
+    alert("Error")
 	}
   })
   .catch(error => console.error('Error:', error));
@@ -405,4 +404,5 @@ document.addEventListener('DOMContentLoaded', displayCartItems);
 		</script>
 	</body>
 
+</html>
 </html>
